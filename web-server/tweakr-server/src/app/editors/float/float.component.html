@@ -1,0 +1,4 @@
+<div class='editor'>
+    <input type="range" #range min="{{rangeMin()}}" max="{{rangeMax()}}" [ngModel]="rangeValue()" name='tweakValue' (ngModelChange)="rangeOnChange($event)" />
+    <input type="text" #text [ngModel]="tweak.value" name='tweakValueText' (ngModelChange)="tweak.onChange($event)" />
+</div>
